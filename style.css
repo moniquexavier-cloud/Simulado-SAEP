@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  background-color: #f4f4f9;
+}
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/*Conteúdo Principal*/
+
+/*Header do Conteúdo Principal*/
+
+.header-principal{
+  width: 100%;
+  background-color: #333333; /* Ajuste conforme a cor do fundo da sua aplicação */
+  padding: 15px 30px;
+  box-sizing: border-box;
+}
+
+.logo-empresa {
+  width: 40px;     
+  height: auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Estado Padrão: Botão Login */
+.btn-login{
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #333333;
+  font-size: 14px;
+  padding: 10px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-bar {
+  background-color: #333333;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 8px;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/*Cards*/
+
+.cards-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+  gap: 20px;
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: #333333;
+}
+
+/* Configuração Geral da Aside */
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  
+  background-color: #333333;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+}
+
+/* 1. Identificação */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 20px;
+}
+
+.sidebar-header .logo {
+  max-width: 40px;
+  height: auto;
+}
+
+.sidebar-header .system-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* 2. Indicadores */
+.sidebar-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.metric-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 12px 15px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-label {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-bottom: 5px;
+}
+
+.metric-value {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* 3. Navegação e Botão "Registros" */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-btn {
+  width: 100%;
+  padding: 12px 0;
+  background-color: transparent;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  
+  border: none;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* Estado Deslogado / Desabilitado */
+.nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Estado Ativo (Usuário Logado no Formulário) */
+.nav-btn.active {
+  background-color: #95d27d;
+  color: #ffffff;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+/* 4. Rodapé Fixado na Parte Inferior */
+.sidebar-footer {
+  margin-top: auto;
+  background-color: #333333;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-footer .panel-id {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.sociais {
+  display: flex;
+  gap: 12px;
+}
+
+.sociais img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); 
+  transition: opacity 0.2s ease;
+}
+
+.social-icons img:hover {
+  opacity: 0.7;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}

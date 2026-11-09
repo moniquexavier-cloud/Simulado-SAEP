@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>SAEP</title>
+</head>
+<body>
+
+
+<!--Página principal-->
+<main>
+
+<!--Header da Página principal-->
+<header class="header-principal">
+<img class="logo-empresa" src="assets/logo-empresa.png">
+<div class="header-container">
+<button class="btn-login" id="btnLogin">Login</button>
+</div>
+
+<div class="filter-bar">
+    <div class="filter-container">
+    <span class="filter-title">Filtros Operacionais:</span>
+    <div class="filter-options">
+      <button class="filter-btn active" data-filter="todos">Todos</button>
+      <button class="filter-btn" data-filter="manutencao">Manutenção</button>
+      <button class="filter-btn" data-filter="operacao">Operação</button>
+      <button class="filter-btn" data-filter="inspecao">Inspeção</button>
+    </div>
+   </div>
+</div>
+</div>
+</header>
+
+<!--Conteúdo dos Cards-->
+<section class="registros-cards">
+
+<div class="cards-container">
+
+<!--CARD 1-->
+<div class="card">
+<h3 class="card-titulo" id="manutencao">Manutenção</h3>
+
+<img src="assets/account.svg">
+<h3 class= "nome-operador">João Pessoa</h3>
+
+<span class="distant-label">Distânica Percorrida:</span>
+<span class="distant-value">6KM</span>
+
+
+<span class="time-label">Tempo de Execução:</span>
+<span class="time-value">5Hr</span>
+
+<span class="time-label">Indicador de eficiência:</span>
+<span class="time-value">13:30 - 27/07/2026</span>
+</div>
+
+<!--CARD 2-->
+<div class="card">
+<h3 class="card-titulo" id="operacao">Operação</h3>
+
+<img src="assets/account.svg">
+<h3 class= "nome-operador">Francisco Silva</h3>
+
+<span class="distant-label">Distânica Percorrida:</span>
+<span class="distant-value">5KM</span>
+
+
+<span class="time-label">Tempo de Execução:</span>
+<span class="time-value">8Hr</span>
+
+<span class="time-label">Indicador de eficiência:</span>
+<span class="time-value">08:30 - 13/07/2026</span>
+</div>
+
+<!--CARD 3-->
+<div class="card">
+<h3 class="card-titulo">Manuntenção</h3>
+
+<img src="assets/account.svg">
+<h3 class= "nome-operador">João Pessoa</h3>
+
+<span class="distant-label">Distânica Percorrida:</span>
+<span class="distant-value">6KM</span>
+
+
+<span class="time-label">Tempo de Execução:</span>
+<span class="time-value">5Hr</span>
+
+<span class="time-label">Indicador de eficiência:</span>
+<span class="time-value">13:30 - 27/07/2026</span>
+</div>
+
+
+<!--CARD 4-->
+<div class="card">
+<h3 class="card-titulo">Manuntenção</h3>
+
+<img src="assets/account.svg">
+<h3 class= "nome-operador">João Pessoa</h3>
+
+<span class="distant-label">Distânica Percorrida:</span>
+<span class="distant-value">6KM</span>
+
+
+<span class="time-label">Tempo de Execução:</span>
+<span class="time-value">5Hr</span>
+
+<span class="time-label">Indicador de eficiência:</span>
+<span class="time-value">13:30 - 27/07/2026</span>
+</div>
+
+
+</div>
+</section>
+
+</main>
+
+<!--Barra Lateral-->
+<aside class="sidebar">
+
+<!--Header do Sidebar-->
+<div class="sidebar-header">
+<img src="assets/logo-empresa.png" class="logo">
+<h1 class="titulo">Painel de Apontamentos Operacionais</h1>
+</div>
+<!--Metricas do Sidebar-->
+<div class="sidebar-metricas">
+
+<span class="metric-label">Total de Apontamentos</span>
+<span class="metric-value" id="total-apontamentos">0</span>
+</div>
+
+<div class="sidebar-metricas">
+
+<span class="metric-label">Horas Operacionais Acumuladas</span>
+<span class="metric-value" id="horas-acumuladas">0h</span>
+</div>
+</div>
+
+<!--Navegação do Sidebar-->
+<nav class="sidebar-nav">
+<button class="nav-btn" disabled>Registros</button>
+</nav>
+
+<!--Rodapé do Sidebar-->
+<footer class="sidebar-footer">
+<span class="painel">Painel de Controle</span>
+
+<div class ="sociais">
+<a href="#"><img src="assets/instagram.svg" alt="Instagram"></a>
+<a href="#"><img src="assets/twitter.svg" alt="Twitter"></a>
+<a href="#"><img src="assets/linkedin.svg" alt="LinkedIn"></a>
+
+<span class="copyright">Copyright- 2026</span>
+</footer>
+
+</aside>
+</div>
+
+
+
+</body>
+</html>
