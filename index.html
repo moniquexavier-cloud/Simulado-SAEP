@@ -8,19 +8,16 @@
 </head>
 <body>
 
-
-<!--Página principal-->
-<main>
-
 <!--Header da Página principal-->
 <header class="header-principal">
-<img class="logo-empresa" src="assets/logo-empresa.png">
+
+<img class="logo-empresa" src="assets/logo-empresa.png" alt="logo">
+
 <div class="header-container">
-<button class="btn-login" id="btnLogin">Login</button>
-</div>
 
 <div class="filter-bar">
     <div class="filter-container">
+
     <span class="filter-title">Filtros Operacionais:</span>
     <div class="filter-options">
       <button class="filter-btn active" data-filter="todos">Todos</button>
@@ -31,106 +28,28 @@
    </div>
 </div>
 </div>
+
+<button class="btn-login" id="btnLogin">Login</button>
+
+</div>
 </header>
 
-<!--Conteúdo dos Cards-->
-<section class="registros-cards">
-
-<div class="cards-container">
-
-<!--CARD 1-->
-<div class="card">
-<h3 class="card-titulo" id="manutencao">Manutenção</h3>
-
-<img src="assets/account.svg">
-<h3 class= "nome-operador">João Pessoa</h3>
-
-<span class="distant-label">Distânica Percorrida:</span>
-<span class="distant-value">6KM</span>
-
-
-<span class="time-label">Tempo de Execução:</span>
-<span class="time-value">5Hr</span>
-
-<span class="time-label">Indicador de eficiência:</span>
-<span class="time-value">13:30 - 27/07/2026</span>
-</div>
-
-<!--CARD 2-->
-<div class="card">
-<h3 class="card-titulo" id="operacao">Operação</h3>
-
-<img src="assets/account.svg">
-<h3 class= "nome-operador">Francisco Silva</h3>
-
-<span class="distant-label">Distânica Percorrida:</span>
-<span class="distant-value">5KM</span>
-
-
-<span class="time-label">Tempo de Execução:</span>
-<span class="time-value">8Hr</span>
-
-<span class="time-label">Indicador de eficiência:</span>
-<span class="time-value">08:30 - 13/07/2026</span>
-</div>
-
-<!--CARD 3-->
-<div class="card">
-<h3 class="card-titulo">Manuntenção</h3>
-
-<img src="assets/account.svg">
-<h3 class= "nome-operador">João Pessoa</h3>
-
-<span class="distant-label">Distânica Percorrida:</span>
-<span class="distant-value">6KM</span>
-
-
-<span class="time-label">Tempo de Execução:</span>
-<span class="time-value">5Hr</span>
-
-<span class="time-label">Indicador de eficiência:</span>
-<span class="time-value">13:30 - 27/07/2026</span>
-</div>
-
-
-<!--CARD 4-->
-<div class="card">
-<h3 class="card-titulo">Manuntenção</h3>
-
-<img src="assets/account.svg">
-<h3 class= "nome-operador">João Pessoa</h3>
-
-<span class="distant-label">Distânica Percorrida:</span>
-<span class="distant-value">6KM</span>
-
-
-<span class="time-label">Tempo de Execução:</span>
-<span class="time-value">5Hr</span>
-
-<span class="time-label">Indicador de eficiência:</span>
-<span class="time-value">13:30 - 27/07/2026</span>
-</div>
-
-
-</div>
-</section>
-
-</main>
+<!--Layout Principal-->
+<div class="layout-principal">
 
 <!--Barra Lateral-->
 <aside class="sidebar">
-
 <!--Header do Sidebar-->
 <div class="sidebar-header">
 <img src="assets/logo-empresa.png" class="logo">
 <h1 class="titulo">Painel de Apontamentos Operacionais</h1>
 </div>
+
 <!--Metricas do Sidebar-->
 <div class="sidebar-metricas">
 
 <span class="metric-label">Total de Apontamentos</span>
 <span class="metric-value" id="total-apontamentos">0</span>
-</div>
 
 <div class="sidebar-metricas">
 
@@ -157,9 +76,267 @@
 </footer>
 
 </aside>
+
+
+<!--Página principal-->
+<main>
+<section class="conteudo-container">
+<section class="registros-cards">
+<div class="cards-container">
+
+<!--CARD 1-->
+<div class="card">
+<h3 class="card-titulo" id="manutencao">Manutenção</h3>
+
+<img src="assets/account.svg">
+<h3 class= "nome-operador">João Pessoa</h3>
+
+<span class="distant-label">Distânica Percorrida:</span>
+<span class="distant-value">6KM</span>
+
+
+<span class="time-label">Tempo de Execução:</span>
+<span class="time-value">5Hr</span>
+
+<span class="time-label">Indicador:</span>
+<span class="time-value">13:30 - 27/07/2026</span>
+
+<div class="card-acoes">
+
+<button class="acao-btn btn-like" type="button">
+<img src="assets/like.svg" alt="Curtir">
+<span class="contador-like">0</span>
+</button>
+
+<button class="acao-btn btn-comentario" type="button">
+<img src="assets/message.svg" alt="comentario">
+<span class="contador-comentario">0</span>
+</button>
+
+</div>
+</div>
+
+<!--CARD 2-->
+<div class="card">
+<h3 class="card-titulo" id="operacao">Operação</h3>
+
+<img src="assets/account.svg">
+<h3 class= "nome-operador">Francisco Silva</h3>
+
+<span class="distant-label">Distânica Percorrida:</span>
+<span class="distant-value">9KM</span>
+
+
+<span class="time-label">Tempo de Execução:</span>
+<span class="time-value">6Hr</span>
+
+<span class="time-label">Indicador:</span>
+<span class="time-value">08:30 - 13/06/2026</span>
+
+<div class="card-acoes">
+
+<button class="acao-btn btn-like" type="button">
+<img src="assets/like.svg" alt="Curtir">
+<span class="contador-like">0</span>
+</button>
+
+<button class="acao-btn btn-comentario" type="button">
+<img src="assets/message.svg" alt="comentario">
+<span class="contador-comentario">0</span>
+</button>
+
+</div>
+</div>
+
+<!--CARD 3-->
+<div class="card">
+<h3 class="card-titulo" id="inspecao">Inspeção</h3>
+
+<img src="assets/account.svg">
+<h3 class= "nome-operador">Luis Paulo</h3>
+
+<span class="distant-label">Distânica Percorrida:</span>
+<span class="distant-value">8KM</span>
+
+
+<span class="time-label">Tempo de Execução:</span>
+<span class="time-value">7Hr</span>
+
+<span class="time-label">Indicador:</span>
+<span class="time-value">13:30 - 14/07/2026</span>
+
+<div class="card-acoes">
+
+<button class="acao-btn btn-like" type="button">
+<img src="assets/like.svg" alt="Curtir">
+<span class="contador-like">0</span>
+</button>
+
+<button class="acao-btn btn-comentario" type="button">
+<img src="assets/message.svg" alt="comentario">
+<span class="contador-comentario">0</span>
+</button>
+
+</div>
+</div>
+
+
+<!--CARD 4-->
+<div class="card">
+<h3 class="card-titulo" id="operacao">Operador</h3>
+
+<img src="assets/account.svg">
+<h3 class= "nome-operador">Pedro Felipe</h3>
+
+<span class="distant-label">Distânica Percorrida:</span>
+<span class="distant-value">8KM</span>
+
+
+<span class="time-label">Tempo de Execução:</span>
+<span class="time-value">5Hr</span>
+
+<span class="time-label">Indicador:</span>
+<span class="time-value">11:30 - 22/09/2026</span>
+
+<div class="card-acoes">
+
+<button class="acao-btn btn-like" type="button">
+<img src="assets/like.svg" alt="Curtir">
+<span class="contador-like">0</span>
+</button>
+
+<button class="acao-btn btn-comentario" type="button">
+<img src="assets/message.svg" alt="comentario">
+<span class="contador-comentario">0</span>
+</button>
+
+</div>
+</div>
+
+<!--CARD 5-->
+<div class="card">
+<h3 class="card-titulo" id="manutencao">Manutenção</h3>
+
+<img src="assets/account.svg">
+<h3 class= "nome-operador">Enzo Costa</h3>
+
+<span class="distant-label">Distânica Percorrida:</span>
+<span class="distant-value">9KM</span>
+
+
+<span class="time-label">Tempo de Execução:</span>
+<span class="time-value">6Hr</span>
+
+<span class="time-label">Indicador:</span>
+<span class="time-value">14:30 - 11/05/2026</span>
+
+<div class="card-acoes">
+
+<button class="acao-btn btn-like" type="button">
+<img src="assets/like.svg" alt="Curtir">
+<span class="contador-like">0</span>
+</button>
+
+<button class="acao-btn btn-comentario" type="button">
+<img src="assets/message.svg" alt="comentario">
+<span class="contador-comentario">0</span>
+</button>
+
+</div>
+</div>
+
+<!--CARD 6-->
+<div class="card">
+<h3 class="card-titulo" id="inspecao">Inspeção</h3>
+
+<img src="assets/account.svg">
+<h3 class= "nome-operador">José Felipe</h3>
+
+<span class="distant-label">Distânica Percorrida:</span>
+<span class="distant-value">8KM</span>
+
+
+<span class="time-label">Tempo de Execução:</span>
+<span class="time-value">6Hr</span>
+
+<span class="time-label">Indicador:</span>
+<span class="time-value">13:30 - 07/10/2026</span>
+
+<div class="card-acoes">
+
+<button class="acao-btn btn-like" type="button">
+<img src="assets/like.svg" alt="Curtir">
+<span class="contador-like">0</span>
+</button>
+
+<button class="acao-btn btn-comentario" type="button">
+<img src="assets/message.svg" alt="comentario">
+<span class="contador-comentario">0</span>
+</button>
+
+</div>
 </div>
 
 
 
+</div>
+
+<!--Barra de Páginação-->
+
+<div class="paginacao-container" id="paginacao">
+<button class="page-btn" id="btn-primeira">Primeira</button>
+<button class="page-btn" id="btn-anterior">Anterior</button>
+
+<div class="page-numbers" id="page-numbers"></div>
+
+<button class="page-btn" id="btn-proxima">Próxima</button>
+<button class="page-btn" id="btn-ultima">Ultima</button>
+
+</div>
+
+</section>
+</main>
+
+
+</div>
+
+<!-- Modal de Login (começa oculto) -->
+<div class="modal-overlay" id="modal-login" style="display: none;">
+<div class="modal-box">
+<div class="modal-header">
+<h2>Login do Sistema</h2>
+<button type="button" class="btn-fecharModal" id="fechar-modal">
+<img src="assets/close.svg" alt="Fechar Modal">
+</button>
+</div>
+
+<form id="form-login">
+<div class="campo-email">
+<label for="email">E-mail:</label>
+<input type="email" id="login-email" required placeholder="Digite seu e-mail">
+</div>
+
+<form id="form-login">
+<div class="campo-senha">
+<label for="email">Senha:</label>
+<input type="password" id="login-senha" required placeholder="Digite sua senha">
+</div>
+
+<span class="msg-erro" id="erro-login"></span>
+
+<div class="modal-acoes">
+<button type="button" class="btn-confirmar" id="confirmar-login">Login</button>
+<button type="button" class="btn-cancelar" id="cancelar-login">Cancelar</button>
+</div>
+
+
+</form>
+
+
+</div>
+</div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
