@@ -1,28 +1,34 @@
-body {
+*{
   margin: 0;
-  padding: 0;
+  padding:0;
   font-family: Inter, sans-serif;
-  background-color: #f4f4f9;
-}
-.app-layout {
-  display: flex;
-  min-height: 100vh;
-  width: 100%;
-}
-
-/*Conteúdo Principal*/
-
-/*Header do Conteúdo Principal*/
-
-.header-principal{
-  width: 100%;
-  background-color: #333333; /* Ajuste conforme a cor do fundo da sua aplicação */
-  padding: 15px 30px;
   box-sizing: border-box;
 }
 
-.logo-empresa {
-  width: 40px;     
+/* 1. Impede a página de estourar na horizontal */
+body {
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1;
+  min-width: 0; 
+}
+
+/*Header Principal*/
+
+.header-principal{
+  width: 100%;
+  background-color: #333333;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;         
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.39);
+}
+
+.logo-empresa{
+  width: 50px;
   height: auto;
 }
 
@@ -32,185 +38,225 @@ body {
   align-items: center;
 }
 
-/* Estado Padrão: Botão Login */
-.btn-login{
-  background-color: #ffffff;
-  color: #333333;
-  border: 1px solid #333333;
-  font-size: 14px;
-  padding: 10px 30px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
 
-.filter-bar {
+/*barra de filtros*/
+
+.filter-bar{
   background-color: #333333;
-  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  border-radius: 8px;
 }
 
-.filter-container {
+.filter-container{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   padding: 0 20px;
   box-sizing: border-box;
+  color: #FFFF;
 }
 
-/*Cards*/
-
-.cards-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
-  gap: 20px;
+.filter-btn{
+  background-color: #FFFF;
+  color:#333333 ;
+  padding: 10px 5px;
+  border-radius: 15px;
+  border: solid 2px #838383;
+  cursor: pointer;
 }
 
-.card{
-    width: 200px;
-    height: 300px;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: #333333;
+/*botão Login*/
+
+.btn-login{
+  background-color: #FFFF;
+  color:#333333 ;
+  padding: 15px 30px;
+  border-radius: 40px;
+  border: solid 2px #838383;
+  cursor: pointer;
 }
 
-/* Configuração Geral da Aside */
-.sidebar {
+
+/*conteudo principal*/
+
+.layout-principal {
+  display: flex;
+  align-items: stretch; 
+  min-height: 100vh;
+}
+
+/* Configuração do Aside */
+
+.sidebar{
   width: 300px;
-  height: 100vh;
-  
+  height: auto;
+
   background-color: #333333;
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
   padding: 20px;
-  position: relative;
+  box-sizing: border-box;
 }
 
-/* 1. Identificação */
-.sidebar-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding-bottom: 20px;
-}
-
-.sidebar-header .logo {
-  max-width: 40px;
+.logo{
+  width: 80px;
   height: auto;
 }
 
-.sidebar-header .system-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin: 0;
-}
-
-/* 2. Indicadores */
-.sidebar-metrics {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 15px;
-  margin-bottom: 30px;
-}
-
-.metric-card {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 12px 15px;
-  border-radius: 6px;
-  display: flex;
-  flex-direction: column;
-}
-
-.metric-label {
-  font-size: 0.8rem;
-  opacity: 0.8;
-  margin-bottom: 5px;
-}
-
-.metric-value {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-/* 3. Navegação e Botão "Registros" */
-.sidebar-nav {
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-btn {
-  width: 100%;
-  padding: 12px 0;
-  background-color: transparent;
-  color: #ffffff;
-  text-align: center;
-  font-size: 1rem;
-  cursor: pointer;
-  
-  border: none;
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
-  transition: all 0.3s ease;
-}
-
-/* Estado Deslogado / Desabilitado */
-.nav-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-/* Estado Ativo (Usuário Logado no Formulário) */
-.nav-btn.active {
-  background-color: #95d27d;
-  color: #ffffff;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-}
-
-/* 4. Rodapé Fixado na Parte Inferior */
-.sidebar-footer {
+.sidebar-metricas{
   margin-top: auto;
-  background-color: #333333;
+}
+
+.sidebar-nav{
+   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn{
+  background-color: #ffffff;
+  border: solid 2px #838383;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.sidebar-footer{
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
   padding-top: 20px;
+}
+
+.sociais img{
+  width: 20px;
+  height: auto;
+}
+
+/*cards*/
+
+.conteudo-container {
+  flex: 1;
+  padding: 30px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card img {
+  width: 28px;
+  height: 28px;
+}
+
+.card{
+  width: 200px;
+  height: 300px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: solid 5px #838383;
 }
 
-.sidebar-footer .panel-id {
-  font-size: 0.85rem;
-  opacity: 0.9;
-}
-
-.sociais {
+.paginacao-container{
   display: flex;
-  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
 }
 
-.sociais img {
+.page-btn{
+  background-color: #483DAD;
+  color: #FFFF;
+  width: 80px;
+  height: auto;
+  padding: 2px;
+  border: solid 2px #b1abe9;
+  border-radius: 10px;
+}
+
+
+/* Modal de Login */
+
+.nav-btn.ativo {
+  background-color: #483DAD;
+}
+
+.modal-overlay{
+  position: fixed;
+  top: 0;                               
+  left: 0;                             
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.btn-fecharModal img {
   width: 20px;
   height: 20px;
-  filter: brightness(0) invert(1); 
-  transition: opacity 0.2s ease;
 }
 
-.social-icons img:hover {
-  opacity: 0.7;
+.btn-fecharModal {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-.copyright {
-  font-size: 0.75rem;
-  opacity: 0.6;
+.modal-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;           
+  width: 100%;
+}
+
+.modal-box{
+  background-color: #FFFF;
+  color: #333333;
+  width: 100%;
+  max-width: 400px;
+  padding: 25px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campo-email,
+.campo-senha {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.modal-acoes{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-confirmar {
+  background-color: #333333;
+  color: #FFFFFF;
 }
